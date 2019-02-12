@@ -18,9 +18,9 @@ def title_case(sentence):
     ----
     sentences: string_utilsString to be converted to title case
     """
-    if len(sentence)==0:
-            return ""
-    if isinstance(sentence,str):
+    if len(sentence) == 0:
+        raise TypeError('String cannot be empty')
+    if not isinstance(sentence,str):
         raise TypeError("Input %s is not valid. string  type input is expected" %(sentence))
 
     newsentence=sentence[0].upper()
@@ -30,3 +30,4 @@ def title_case(sentence):
         else:
             newsentence+=sentence[i].lower()
     return newsentence
+
