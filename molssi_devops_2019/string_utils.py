@@ -15,8 +15,16 @@ def title_case(sentence):
     Title case means that the first character of every word is capitalize lowercaseself.
 
     Parameters
-    ----
-    sentences: string_utilsString to be converted to title case
+    --------
+    sentences : string
+       string that we're going to use as input
+     
+    Returns
+    -------
+    newsentence : string
+       String formatted
+
+
     """
     if len(sentence) == 0:
         raise TypeError('String cannot be empty')

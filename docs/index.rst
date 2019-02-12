@@ -13,6 +13,8 @@ This is sample documentation *yeah!*
    :caption: Contents:
 
    usage/quickstart
+   modules/molssi_math
+   modules/string_utils
 
 
 Indices and tables
