@@ -24,8 +24,8 @@ def mean(num_list):
     """
 
     # check list - this is restrictive, chec
-    #if not isinstance(num_list, list):
-    #    raise TypeError('Invalid input [%s] - input must be a list'%(num_list))
+    if not isinstance(num_list, list):
+        raise TypeError('Invalid input [%s] - input must be a list'%(num_list))
 
     # check you can iterate through (gives set/numpy compatibility)
     try:
