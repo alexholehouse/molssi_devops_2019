@@ -6,6 +6,7 @@ Handles the primary functions
 """
 
 import numbers
+import numpy as np
 
 
 def mean(num_list):
