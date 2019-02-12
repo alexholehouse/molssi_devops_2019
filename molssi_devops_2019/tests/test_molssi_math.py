@@ -14,6 +14,7 @@ def num_list_3():
     return [1,2,3,4,5]
 
 
+
 @pytest.mark.parametrize("num_list, expected_mean",[
     ([1,2,3,4,5],3),
     ([0,2,4,6],3),

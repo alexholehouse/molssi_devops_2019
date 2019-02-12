@@ -23,7 +23,6 @@ def test_return_empty_string():
     with pytest.raises(TypeError):
         md.string_utils.title_case("")
     
-
 @pytest.mark.parametrize("in_strings, out_strings",[
     ("yeah","Yeah"),
     ("yeah ok well fine", "Yeah Ok Well Fine"),
