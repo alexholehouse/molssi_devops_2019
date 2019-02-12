@@ -21,9 +21,6 @@ def mean(num_list):
     -------
     mean_val : float
        Average value (geometric mean)
-
-
-
     """
 
     # check list - this is restrictive, chec
@@ -36,10 +33,11 @@ def mean(num_list):
     except TypeError as te:
         raise TypeError('Invalid input [%s] - input must be iterable' % (num_list))
 
-    # check
+    # check we have a list with one or more values
     if len(num_list) == 0:
         raise ZeroDivisionError('Cannot calculate meean of empty list')
 
+    # set total and then ensure EACH value is numerical
     total = 0
     for i in num_list:
         if not isinstance(i, numbers.Number):
