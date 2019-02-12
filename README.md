@@ -9,7 +9,7 @@ A sample repo for the workshop what we did in january 2019 at VT
 
 ### Copyright
 
-Copyright (c) 2019, Alex Holehouse
+Copyright (c) 2019, Alex Holehouse. Made some changes now.
 
 
 #### Acknowledgements
