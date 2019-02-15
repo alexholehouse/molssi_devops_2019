@@ -61,3 +61,37 @@ def test_mean_zero_division_error():
         md.mean(test_list)
 
 
+
+
+"""
+@pytest.mark.parametrize("return_val, target_val, list_vals",[
+    (-1, 3, []),
+    (-1, 3, [1])])
+"""
+@pytest.mark.parametrize("return_val, target_val, list_vals",[
+    (-1, 3, []),
+    (-1, 3, [1]),
+    (0,1, [1]),
+    (0,1, [1, 3, 5]),
+    (1,3, [1, 3, 5]),
+    (2,5, [1, 3, 5]),
+    (-1, 0, [1, 3, 5]),
+    (-1, 2, [1, 3, 5]),
+    (-1, 4, [1, 3, 5]),
+    (-1, 6, [1, 3, 5]),
+    (0,1, [1, 3, 5, 7]),
+    (1,3, [1, 3, 5, 7]),
+    (2,5, [1, 3, 5, 7]),
+    (3,7, [1, 3, 5, 7]),
+    (-1, 0, [1, 3, 5, 7]),
+    (-1, 2, [1, 3, 5, 7]),
+    (-1, 4, [1, 3, 5, 7]),
+    (-1, 6, [1, 3, 5, 7]),
+    (-1, 8, [1, 3, 5, 7])])
+@pytest.mark.param
+def test_many_chops(return_val, target_val, list_vals):    
+    assert(return_val ==  md.chop(target_val, list_vals))
+
+
+
+
